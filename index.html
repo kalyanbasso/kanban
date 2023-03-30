@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@200;500;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanBan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <nav>
+            <img src="./assets/logo.svg" alt="logo" class="logo">
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <ion-icon name="tablet-portrait"></ion-icon>
+                        Boards
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="people"></ion-icon>
+                        Equipes
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="document-text"></ion-icon>
+                        Relatórios
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="cog"></ion-icon>
+                        Ajustes
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="inner">
+                <section class="title-avatar">
+                    <h1>Meu KanBan <img src="./assets/pencil.svg" alt="pencil" class="pencil"></h1>
+                    <img src="https://github.com/kalyanbasso.png" alt="avatar">
+                </section>
+
+                <section class="filter">
+                    <button>
+                        <ion-icon name="filter-outline"></ion-icon>
+                        <span>Filtrar</span>
+                    </button>
+                    <div class="input-wrapper">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="text" placeholder="Pesquisar">
+                    </div>
+                </section>
+
+                <section class="kanban">
+                    <div class="todo">
+                        <h2>A fazer</h2>
+                        <div class="cards">
+                            <div class="card">
+                                <h3>Revisar o relatório de vendas</h3>
+                                <p>Revisar o relatório de vendas do último trimestre e analisar os resultados.</p>
+                                <div class="tags">
+                                    <span>Vendas</span>
+                                    <span>Relatório</span>
+                                    <span>Análise</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>Atualizar o site da empresa</h3>
+                                <p>Atualizar o conteúdo do site da empresa com informações recentes sobre os produtos e serviços oferecidos.</p>
+                                <div class="tags">
+                                    <span>Site</span>
+                                    <span>Conteúdo</span>
+                                    <span>Atualização</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>Preparar o orçamento anual</h3>
+                                <p>Preparar o orçamento anual da empresa com base nos objetivos e metas estabelecidos.</p>
+                                <div class="tags">
+                                    <span>Orçamento</span>
+                                    <span>Planejamento</span>
+                                    <span>Metas</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doing">
+                        <h2>Fazendo</h2>
+                        <div class="cards">
+                            <div class="card">
+                                <h3>Desenvolver novo produto</h3>
+                                <p>Desenvolver um novo produto que atenda às necessidades dos clientes e se diferencie da concorrência.</p>
+                                <div class="tags">
+                                    <span>Produto</span>
+                                    <span>Desenvolvimento</span>
+                                    <span>Inovação</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>Treinamento em atendimento ao cliente</h3>
+                                <p>Realizar um treinamento em atendimento ao cliente para a equipe de vendas, focado em melhorar a satisfação dos clientes.</p>
+                                <div class="tags">
+                                    <span>Treinamento</span>
+                                    <span>Atendimento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="done">
+                        <h2>Feito</h2>
+                        <div class="cards">
+                            <div class="card">
+                                <h3>Reunião com o cliente</h3>
+                                <p>Reunião com o cliente para apresentar o novo produto e discutir as necessidades do cliente.</p>
+                                <div class="tags">
+                                    <span>Reunião</span>
+                                    <span>Cliente</span>
+                                    <span>Produto</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <h3>Reunião com o time de vendas</h3>
+                                <p>Reunião com o time de vendas para apresentar o novo produto e discutir as estratégias de vendas.</p>
+                                <div class="tags">
+                                    <span>Reunião</span>
+                                    <span>Produto</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
